@@ -1,0 +1,11 @@
+import mysql.connector
+conn = mysql.connector.connect(host='localhost',password='12345',user='root')
+mycursor=conn.cursor()
+mycursor.execute("insert into Assignment2.ExamResults_Table values (501, 1, 201, 92.5);")
+mycursor.execute("insert into Assignment2.ExamResults_Table values (502, 2, 201, 88.0);")
+mycursor.execute("insert into Assignment2.ExamResults_Table values (503, 3, 202, 95.5);")
+mycursor.execute("insert into Assignment2.ExamResults_Table values (504, 4, 203, 89.0);")
+mycursor.execute("insert into Assignment2.ExamResults_Table values (505, 5, 204, 94.5);")
+mycursor.execute("insert into Assignment2.ExamResults_Table values (506, 6, 205, 91.0);")
+mycursor.execute("insert into Assignment2.ExamResults_Table values (507, 7, 201, 87.5);")
+conn.commit()
