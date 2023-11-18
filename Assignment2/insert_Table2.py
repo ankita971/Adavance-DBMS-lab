@@ -1,0 +1,13 @@
+import mysql.connector
+conn = mysql.connector.connect(host='localhost',password='t23cs006',user='root')
+mycursor=conn.cursor()
+mycursor.execute('insert into databse.course_Table values (101, "Mathematics", 3);')
+mycursor.execute('insert into databse.course_Table values (102, "History", 4);')
+mycursor.execute('insert into databse.course_Table values (103, "Computer Science", 3);')
+mycursor.execute('insert into databse.course_Table values (104, "Literature", 3);')
+mycursor.execute('insert into databse.course_Table values (105, "Chemistry", 4);')
+mycursor.execute('insert into databse.course_Table values (106, "Physics", 4);')
+mycursor.execute('insert into databse.course_Table values (107, "Economics", 3);')
+mycursor.execute('insert into databse.course_Table values (108, "Biology", 4);')
+conn.commit()
+conn.close()

@@ -1,0 +1,12 @@
+import mysql.connector
+conn = mysql.connector.connect(host='localhost',password='t23cs006',user='root')
+mycursor=conn.cursor()
+mycursor.execute("insert into databse.Faculty_Table values (301, 'Dr. Smith', 'smith@example.com', '111-222-3333', 'Mathematics');")
+mycursor.execute("insert into databse.Faculty_Table values (302, 'Prof. Johnson', 'johnson@example.com', '444-555-6666', 'History');")
+mycursor.execute("insert into databse.Faculty_Table values (303, 'Prof. Brown', 'brown@example.com', '777-888-9999', 'Computer Science');")
+mycursor.execute("insert into databse.Faculty_Table values (304, 'Dr. Parker', 'parker@example.com', '888-777-6666', 'Chemistry');")
+mycursor.execute("insert into databse.Faculty_Table values (305, 'Prof. Adams', 'adams@example.com', '999-888-7777', 'Physics');")
+mycursor.execute("insert into databse.Faculty_Table values (306, 'Dr. Wilson', 'wilson@example.com', '555-444-3333', 'Economics');")
+mycursor.execute("insert into databse.Faculty_Table values (307, 'Prof. Davis', 'davis@example.com', '333-222-1111', 'Biology');")
+mycursor.execute("insert into databse.Faculty_Table values (308, 'Dr. Turner', 'turner@example.com', '222-333-4444', 'Literature');")
+conn.commit()

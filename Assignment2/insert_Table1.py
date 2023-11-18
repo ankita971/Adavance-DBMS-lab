@@ -1,0 +1,13 @@
+import mysql.connector
+conn = mysql.connector.connect(host='localhost',password='t23cs006',user='root')
+mycursor=conn.cursor()
+mycursor.execute("insert into databse.student_Table values (1, 'John Doe', 'john.doe@example.com', '123-456-7890', '123 Main St');")
+mycursor.execute("insert into databse.student_Table values (2, 'Jane Smith', 'jane.smith@example.com', '987-654-3210', '456 Elm St');")
+mycursor.execute("insert into databse.student_Table values (3, 'Robert Johnson', 'robert.j@example.com', '555-123-4567', '789 Oak Ave');")
+mycursor.execute("insert into databse.student_Table values (4, 'Emily White', 'emily.white@example.com', '111-222-3333', '567 Pine St');")
+mycursor.execute("insert into databse.student_Table values (5, 'Michael Lee', 'michael.lee@example.com', '333-444-5555', '789 Cedar Dr');")
+mycursor.execute("insert into databse.student_Table values (6, 'Sarah Brown', 'sarah.brown@example.com', '555-666-7777', '890 Willow Ln');")
+mycursor.execute("insert into databse.student_Table values (7, 'David Clark', 'david.clark@example.com', '777-888-9999', '123 Birch Ave');")
+mycursor.execute("insert into databse.student_Table values (8, 'Melissa Turner', 'melissa.turner@example.com', '888-999-0000', '456 Redwood Rd');")
+conn.commit()
+conn.close()
